@@ -13,6 +13,9 @@
 		848A989928D4B69400140591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848A989728D4B69400140591 /* Main.storyboard */; };
 		848A989B28D4B69500140591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848A989A28D4B69500140591 /* Assets.xcassets */; };
 		848A989E28D4B69500140591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848A989C28D4B69500140591 /* LaunchScreen.storyboard */; };
+		848A98A628D4B6E900140591 /* OneLinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A98A528D4B6E900140591 /* OneLinedButton.swift */; };
+		848A98A828D4E2C600140591 /* TwoLinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A98A728D4E2C600140591 /* TwoLinedButton.swift */; };
+		A5FFCC4942D8C44E2410DF48 /* Pods_TinyConstButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB98320497E85831D339BE4E /* Pods_TinyConstButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		848A989A28D4B69500140591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848A989D28D4B69500140591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848A989F28D4B69500140591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848A98A528D4B6E900140591 /* OneLinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLinedButton.swift; sourceTree = "<group>"; };
+		848A98A728D4E2C600140591 /* TwoLinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLinedButton.swift; sourceTree = "<group>"; };
+		B805274C4FFA4B446502F577 /* Pods-TinyConstButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyConstButton.release.xcconfig"; path = "Target Support Files/Pods-TinyConstButton/Pods-TinyConstButton.release.xcconfig"; sourceTree = "<group>"; };
+		BB98320497E85831D339BE4E /* Pods_TinyConstButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyConstButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF52C339FCAA527861993EE8 /* Pods-TinyConstButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyConstButton.debug.xcconfig"; path = "Target Support Files/Pods-TinyConstButton/Pods-TinyConstButton.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FFCC4942D8C44E2410DF48 /* Pods_TinyConstButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FD43F2D812FF91694D4C62B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF52C339FCAA527861993EE8 /* Pods-TinyConstButton.debug.xcconfig */,
+				B805274C4FFA4B446502F577 /* Pods-TinyConstButton.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7433CFF57D83BB6E0F0BC750 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB98320497E85831D339BE4E /* Pods_TinyConstButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		848A988528D4B69400140591 = {
 			isa = PBXGroup;
 			children = (
 				848A989028D4B69400140591 /* TinyConstButton */,
 				848A988F28D4B69400140591 /* Products */,
+				1FD43F2D812FF91694D4C62B /* Pods */,
+				7433CFF57D83BB6E0F0BC750 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +87,8 @@
 				848A989128D4B69400140591 /* AppDelegate.swift */,
 				848A989328D4B69400140591 /* SceneDelegate.swift */,
 				848A989528D4B69400140591 /* ViewController.swift */,
+				848A98A728D4E2C600140591 /* TwoLinedButton.swift */,
+				848A98A528D4B6E900140591 /* OneLinedButton.swift */,
 				848A989728D4B69400140591 /* Main.storyboard */,
 				848A989A28D4B69500140591 /* Assets.xcassets */,
 				848A989C28D4B69500140591 /* LaunchScreen.storyboard */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848A98A228D4B69500140591 /* Build configuration list for PBXNativeTarget "TinyConstButton" */;
 			buildPhases = (
+				FFD41003CDE56C90DA6609CE /* [CP] Check Pods Manifest.lock */,
 				848A988A28D4B69400140591 /* Sources */,
 				848A988B28D4B69400140591 /* Frameworks */,
 				848A988C28D4B69400140591 /* Resources */,
+				789359AC2A1B8B443A15F397 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +165,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		789359AC2A1B8B443A15F397 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinyConstButton/Pods-TinyConstButton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinyConstButton/Pods-TinyConstButton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinyConstButton/Pods-TinyConstButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD41003CDE56C90DA6609CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinyConstButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		848A988A28D4B69400140591 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				848A989628D4B69400140591 /* ViewController.swift in Sources */,
+				848A98A628D4B6E900140591 /* OneLinedButton.swift in Sources */,
 				848A989228D4B69400140591 /* AppDelegate.swift in Sources */,
+				848A98A828D4E2C600140591 /* TwoLinedButton.swift in Sources */,
 				848A989428D4B69400140591 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +358,7 @@
 		};
 		848A98A328D4B69500140591 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF52C339FCAA527861993EE8 /* Pods-TinyConstButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +387,7 @@
 		};
 		848A98A428D4B69500140591 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B805274C4FFA4B446502F577 /* Pods-TinyConstButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
